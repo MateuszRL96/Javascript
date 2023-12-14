@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WeatherApp 0.1</title>
+</head>
+<body>
+
+    <main>
+        <section class="weather-info" id="mainContainer">
+            <div class="weather-info_serach-view" id="weatherSearchView">
+                <label for="searchInput" class="weather-ifo_search_label">Check weather:</label>
+                <input type="text" id="searchInput">
+                <button id="searchButton">search</button>
+            </div>
+
+            <div class="weather-info_forecast-view" id="weatherForecastView">
+                <button class="weather-info_btn-return" id="returnToSearchBtn">return</button>
+
+                <div class="weather-info_city">
+                    <h1 id="weatherCity"></h1>
+                    <h1 id="weatherIcon"></h1>
+                </div>
+
+
+                <div class="weather-info_temperatures">
+                    <h2 id="weatherCurrentTemp"></h2>
+                    <p id="weatherMaxTemp"></p>
+                    <p id="weatherMinTemp"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="scr/main.js"></script>
+
+
+    
+</body>
+</html>
